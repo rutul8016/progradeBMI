@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="BMIStyle.css">
+</head>
+<body>
+
+    <script src="BMIScript.js"></script>
+    <table>
+        <tr>
+            <td colspan=2>BMI Calculator</td>
+        </tr>
+        <tr>
+            <td>Unit system:</td>
+            <td><input type="radio" name="sys" value="metric" id="sysm" onclick="metricprompt()">Metric
+            <input type="radio" name="sys" value="imperial" id="sysi" onclick="imperialprompt()">Imperial</td>
+        </tr>
+        <tr>
+            <td>Enter weight:</td>
+            <td><input type="number" id="inwt"></td>
+        </tr>
+        <tr>
+            <td>Enter height:</td>
+            <td><input type="number" id="inht"></td>
+        </tr>
+        <tr>
+            <td colspan=2><button id="calc" onclick="calculateBMI()">Calculate BMI</button></td>
+        </tr>
+        <tr>
+            <td>BMI Value:</td>
+            <td><input type="number" id="val"></td>
+        </tr>
+        <tr>
+            <td>BMI Category:</td>
+            <td><input type="text" id="cat"></td>
+        </tr>
+    </table>
+</body>
+</html>
